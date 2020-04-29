@@ -44,17 +44,17 @@
 
 QT_BEGIN_NAMESPACE
 
-class QtLabsCalendarPlugin: public QQmlExtensionPlugin
+class QtQuickCalendarPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID QQmlExtensionInterface_iid)
 
 public:
-    QtLabsCalendarPlugin(QObject *parent = nullptr);
+    QtQuickCalendarPlugin(QObject *parent = nullptr);
     void registerTypes(const char *uri) override;
 };
 
-QtLabsCalendarPlugin::QtLabsCalendarPlugin(QObject *parent) : QQmlExtensionPlugin(parent)
+QtQuickCalendarPlugin::QtQuickCalendarPlugin(QObject *parent) : QQmlExtensionPlugin(parent)
 {
 }
 
@@ -65,7 +65,7 @@ static QObject *calendarSingleton(QQmlEngine *engine, QJSEngine *scriptEngine)
     return new QQuickCalendar;
 }
 
-void QtLabsCalendarPlugin::registerTypes(const char *uri)
+void QtQuickCalendarPlugin::registerTypes(const char *uri)
 {
     qmlRegisterType<QQuickDayOfWeekRow>(uri, 1, 0, "AbstractDayOfWeekRow");
     qmlRegisterType<QQuickMonthGrid>(uri, 1, 0, "AbstractMonthGrid");
@@ -76,4 +76,4 @@ void QtLabsCalendarPlugin::registerTypes(const char *uri)
 
 QT_END_NAMESPACE
 
-#include "qtlabscalendarplugin.moc"
+#include "qtquickcalendarplugin.moc"
