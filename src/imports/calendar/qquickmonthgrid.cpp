@@ -41,22 +41,22 @@ QT_BEGIN_NAMESPACE
     \qmltype MonthGrid
     \inherits Control
 //!     \instantiates QQuickMonthGrid
-    \inqmlmodule Qt.labs.calendar
+    \inqmlmodule QtQuick.Calendar
     \brief A grid of days for a calendar month.
 
     MonthGrid presents a calendar month in a grid. The contents are
     calculated for a given \l month and \l year, using the specified
     \l {Control::locale}{locale}.
 
-    \image qtlabscalendar-monthgrid.png
-    \snippet qtlabscalendar-monthgrid.qml 1
+    \image qtquickcalendar-monthgrid.png
+    \snippet qtquickcalendar-monthgrid.qml 1
 
     MonthGrid can be used as a standalone control, but it is most often
     used in conjunction with DayOfWeekRow and WeekNumberColumn. Regardless
     of the use case, positioning of the grid is left to the user.
 
-    \image qtlabscalendar-monthgrid-layout.png
-    \snippet qtlabscalendar-monthgrid-layout.qml 1
+    \image qtquickcalendar-monthgrid-layout.png
+    \snippet qtquickcalendar-monthgrid-layout.qml 1
 
     The visual appearance of MonthGrid can be changed by
     implementing a \l {delegate}{custom delegate}.
@@ -67,25 +67,25 @@ QT_BEGIN_NAMESPACE
 */
 
 /*!
-    \qmlsignal Qt.labs.calendar::MonthGrid::pressed(date date)
+    \qmlsignal QtQuick.Calendar::MonthGrid::pressed(date date)
 
     This signal is emitted when \a date is pressed.
 */
 
 /*!
-    \qmlsignal Qt.labs.calendar::MonthGrid::released(date date)
+    \qmlsignal QtQuick.Calendar::MonthGrid::released(date date)
 
     This signal is emitted when \a date is released.
 */
 
 /*!
-    \qmlsignal Qt.labs.calendar::MonthGrid::clicked(date date)
+    \qmlsignal QtQuick.Calendar::MonthGrid::clicked(date date)
 
     This signal is emitted when \a date is clicked.
 */
 
 /*!
-    \qmlsignal Qt.labs.calendar::MonthGrid::pressAndHold(date date)
+    \qmlsignal QtQuick.Calendar::MonthGrid::pressAndHold(date date)
 
     This signal is emitted when \a date is pressed and held down.
 */
@@ -234,7 +234,7 @@ QQuickMonthGrid::QQuickMonthGrid(QQuickItem *parent) :
 }
 
 /*!
-    \qmlproperty int Qt.labs.calendar::MonthGrid::month
+    \qmlproperty int QtQuick.Calendar::MonthGrid::month
 
     This property holds the number of the month. The default value is the
     current month.
@@ -277,7 +277,7 @@ void QQuickMonthGrid::setMonth(int month)
 }
 
 /*!
-    \qmlproperty int Qt.labs.calendar::MonthGrid::year
+    \qmlproperty int QtQuick.Calendar::MonthGrid::year
 
     This property holds the number of the year.
 
@@ -302,7 +302,7 @@ void QQuickMonthGrid::setYear(int year)
 
 /*!
     \internal
-    \qmlproperty model Qt.labs.calendar::MonthGrid::source
+    \qmlproperty model QtQuick.Calendar::MonthGrid::source
 
     This property holds the source model that is used as a data model
     for the internal content column.
@@ -323,7 +323,7 @@ void QQuickMonthGrid::setSource(const QVariant &source)
 }
 
 /*!
-    \qmlproperty string Qt.labs.calendar::MonthGrid::title
+    \qmlproperty string QtQuick.Calendar::MonthGrid::title
 
     This property holds a title for the calendar.
 
@@ -349,7 +349,7 @@ void QQuickMonthGrid::setTitle(const QString &title)
 }
 
 /*!
-    \qmlproperty Component Qt.labs.calendar::MonthGrid::delegate
+    \qmlproperty Component QtQuick.Calendar::MonthGrid::delegate
 
     This property holds the item delegate that visualizes each day.
 

@@ -26,12 +26,12 @@
 ****************************************************************************/
 
 /*!
-    \qmlmodule Qt.labs.calendar 1.0
-    \title Qt Labs Calendar QML Types
+    \qmlmodule Qt.marketplace.calendar 1.0
+    \title Qt Quick Calendar QML Types
     \ingroup qmlmodules
-    \brief Provides QML types for calendars (Qt Labs Calendar).
+    \brief Provides QML types for calendars (Qt Quick Calendar).
 
-    The \l{Qt Labs Calendar} module provides QML types for creating
+    The \l{Qt Quick Calendar} module provides QML types for creating
     calendars. These QML types work in conjunction with \l{Qt Quick} and
     \l{Qt Quick Controls}.
 

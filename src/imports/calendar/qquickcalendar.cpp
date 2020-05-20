@@ -35,7 +35,7 @@ QT_BEGIN_NAMESPACE
     \qmltype Calendar
     \inherits QObject
 //! \instantiates QQuickCalendar
-    \inqmlmodule Qt.labs.calendar
+    \inqmlmodule QtQuick.Calendar
     \brief A calendar namespace.
 
     The Calendar singleton provides miscellaneous calendar related

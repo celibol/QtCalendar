@@ -38,21 +38,21 @@ QT_BEGIN_NAMESPACE
     \qmltype DayOfWeekRow
     \inherits Control
 //!     \instantiates QQuickDayOfWeekRow
-    \inqmlmodule Qt.labs.calendar
+    \inqmlmodule QtQuick.Calendar
     \brief A row of names for the days in a week.
 
     DayOfWeekRow presents day of week names in a row. The names of the days
     are ordered and formatted using the specified \l {Control::locale}{locale}.
 
-    \image qtlabscalendar-dayofweekrow.png
-    \snippet qtlabscalendar-dayofweekrow.qml 1
+    \image qtquickcalendar-dayofweekrow.png
+    \snippet qtquickcalendar-dayofweekrow.qml 1
 
     DayOfWeekRow can be used as a standalone control, but it is most
     often used in conjunction with MonthGrid. Regardless of the use case,
     positioning of the row is left to the user.
 
-    \image qtlabscalendar-dayofweekrow-layout.png
-    \snippet qtlabscalendar-dayofweekrow-layout.qml 1
+    \image qtquickcalendar-dayofweekrow-layout.png
+    \snippet qtquickcalendar-dayofweekrow-layout.qml 1
 
     The visual appearance of DayOfWeekRow can be changed by
     implementing a \l {delegate}{custom delegate}.
@@ -98,7 +98,7 @@ QQuickDayOfWeekRow::QQuickDayOfWeekRow(QQuickItem *parent) :
 
 /*!
     \internal
-    \qmlproperty model Qt.labs.calendar::DayOfWeekRow::source
+    \qmlproperty model QtQuick.Calendar::DayOfWeekRow::source
 
     This property holds the source model that is used as a data model
     for the internal content row.
@@ -119,7 +119,7 @@ void QQuickDayOfWeekRow::setSource(const QVariant &source)
 }
 
 /*!
-    \qmlproperty Component Qt.labs.calendar::DayOfWeekRow::delegate
+    \qmlproperty Component QtQuick.Calendar::DayOfWeekRow::delegate
 
     This property holds the item delegate that visualizes each day of the week.
 

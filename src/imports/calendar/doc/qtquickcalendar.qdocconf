@@ -1,27 +1,27 @@
 include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
-include($QT_INSTALL_DOCS/config/exampleurl-qtquickcontrols2.qdocconf)
+#include($QT_INSTALL_DOCS/config/exampleurl-qtquickcontrols2.qdocconf)
 
-project                 = QtLabsCalendar
-description             = Qt Labs Calendar Reference Documentation
+project                 = QtQuickCalendar
+description             = Qt Quick Calendar Reference Documentation
 version                 = $QT_VERSION
 
-qhp.projects            = QtLabsCalendar
+qhp.projects            = QtQuickCalendar
 
-qhp.QtLabsCalendar.file          = qtlabscalendar.qhp
-qhp.QtLabsCalendar.namespace     = org.qt-project.qtlabscalendar.$QT_VERSION_TAG
-qhp.QtLabsCalendar.virtualFolder = qtlabscalendar
-qhp.QtLabsCalendar.indexTitle    = Qt Labs Calendar
-qhp.QtLabsCalendar.indexRoot     =
+qhp.QtQuickCalendar.file          = qtquickcalendar.qhp
+qhp.QtQuickCalendar.namespace     = org.qt-project.qtquickcalendar.$QT_VERSION_TAG
+qhp.QtQuickCalendar.virtualFolder = qtquickcalendar
+qhp.QtQuickCalendar.indexTitle    = Qt Quick Calendar
+qhp.QtQuickCalendar.indexRoot     =
 
-qhp.QtLabsCalendar.filterAttributes                  = qtlabscalendar $QT_VERSION qtrefdoc
-qhp.QtLabsCalendar.customFilters.Qt.name             = QtLabsCalendar $QT_VERSION
-qhp.QtLabsCalendar.customFilters.Qt.filterAttributes = qtlabscalendar $QT_VERSION
+qhp.QtQuickCalendar.filterAttributes                  = qtquickcalendar $QT_VERSION qtrefdoc
+qhp.QtQuickCalendar.customFilters.Qt.name             = QtQuickCalendar $QT_VERSION
+qhp.QtQuickCalendar.customFilters.Qt.filterAttributes = qtquickcalendar $QT_VERSION
 
-qhp.QtLabsCalendar.subprojects = qmltypes
-qhp.QtLabsCalendar.subprojects.qmltypes.title = QML Types
-qhp.QtLabsCalendar.subprojects.qmltypes.indexTitle = Qt Labs Calendar QML Types
-qhp.QtLabsCalendar.subprojects.qmltypes.selectors = qmlclass
-qhp.QtLabsCalendar.subprojects.qmltypes.sortPages = true
+qhp.QtQuickCalendar.subprojects = qmltypes
+qhp.QtQuickCalendar.subprojects.qmltypes.title = QML Types
+qhp.QtQuickCalendar.subprojects.qmltypes.indexTitle = Qt Quick Calendar QML Types
+qhp.QtQuickCalendar.subprojects.qmltypes.selectors = qmlclass
+qhp.QtQuickCalendar.subprojects.qmltypes.sortPages = true
 
 depends = qtcore qtgui qtdoc qtqml qtquick qtquickcontrols
 
@@ -33,8 +33,8 @@ sourcedirs += ../ src
 exampledirs += ../ snippets
 imagedirs += images
 
-navigation.landingpage  = "Qt Labs Calendar"
-navigation.qmltypespage = "Qt Labs Calendar QML Types"
+navigation.landingpage  = "Qt Quick Calendar"
+navigation.qmltypespage = "Qt Quick Calendar QML Types"
 
 tagfile                 = qtquickcalendar.tags
 

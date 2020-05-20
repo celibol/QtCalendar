@@ -37,14 +37,14 @@ QT_BEGIN_NAMESPACE
     \qmltype CalendarModel
     \inherits QAbstractListModel
 //! \instantiates QQuickCalendarModel
-    \inqmlmodule Qt.labs.calendar
+    \inqmlmodule QtQuick.Calendar
     \brief A calendar model.
 
     CalendarModel provides a way of creating a range of MonthGrid
     instances. It is typically used as a model for a ListView that uses
     MonthGrid as a delegate.
 
-    \snippet qtlabscalendar-calendarmodel.qml 1
+    \snippet qtquickcalendar-calendarmodel.qml 1
 
     In addition to the \c index property, a list of model data roles
     are available in the context of each delegate:
@@ -137,7 +137,7 @@ QQuickCalendarModel::QQuickCalendarModel(QObject *parent) :
 }
 
 /*!
-    \qmlproperty date Qt.labs.calendar::CalendarModel::from
+    \qmlproperty date QtQuick.Calendar::CalendarModel::from
 
     This property holds the start date.
 */
@@ -159,7 +159,7 @@ void QQuickCalendarModel::setFrom(const QDate &from)
 }
 
 /*!
-    \qmlproperty date Qt.labs.calendar::CalendarModel::to
+    \qmlproperty date QtQuick.Calendar::CalendarModel::to
 
     This property holds the end date.
 */
@@ -181,7 +181,7 @@ void QQuickCalendarModel::setTo(const QDate &to)
 }
 
 /*!
-    \qmlmethod int Qt.labs.calendar::CalendarModel::monthAt(int index)
+    \qmlmethod int QtQuick.Calendar::CalendarModel::monthAt(int index)
 
     Returns the month number at the specified model \a index.
 */
@@ -192,7 +192,7 @@ int QQuickCalendarModel::monthAt(int index) const
 }
 
 /*!
-    \qmlmethod int Qt.labs.calendar::CalendarModel::yearAt(int index)
+    \qmlmethod int QtQuick.Calendar::CalendarModel::yearAt(int index)
 
     Returns the year number at the specified model \a index.
 */
@@ -203,7 +203,7 @@ int QQuickCalendarModel::yearAt(int index) const
 }
 
 /*!
-    \qmlmethod int Qt.labs.calendar::CalendarModel::indexOf(Date date)
+    \qmlmethod int QtQuick.Calendar::CalendarModel::indexOf(Date date)
 
     Returns the model index of the specified \a date.
 */
@@ -214,7 +214,7 @@ int QQuickCalendarModel::indexOf(const QDate &date) const
 }
 
 /*!
-    \qmlmethod int Qt.labs.calendar::CalendarModel::indexOf(int year, int month)
+    \qmlmethod int QtQuick.Calendar::CalendarModel::indexOf(int year, int month)
 
     Returns the model index of the specified \a year and \a month.
 */
