@@ -79,7 +79,7 @@ QT_BEGIN_NAMESPACE
     \value Calendar.November November (10)
     \value Calendar.December December (11)
 
-    \labs
+    \compatibility
 
     \sa MonthGrid, Calendar
 */

@@ -64,7 +64,7 @@ QT_BEGIN_NAMESPACE
     The visual appearance of DayOfWeekRow can be changed by
     implementing a \l {delegate}{custom delegate}.
 
-    \labs
+    \compatibility
 
     \sa MonthGrid, WeekNumberColumn
 */
