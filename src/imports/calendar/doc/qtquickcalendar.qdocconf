@@ -1,5 +1,4 @@
 include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
-#include($QT_INSTALL_DOCS/config/exampleurl-qtquickcontrols2.qdocconf)
 
 project                 = QtQuickCalendar
 description             = Qt Quick Calendar Reference Documentation
