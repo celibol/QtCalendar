@@ -211,10 +211,10 @@ void QQuickWeekNumberColumn::componentComplete()
     d->resizeItems();
 }
 
-void QQuickWeekNumberColumn::geometryChanged(const QRectF &newGeometry, const QRectF &oldGeometry)
+void QQuickWeekNumberColumn::geometryChange(const QRectF &newGeometry, const QRectF &oldGeometry)
 {
     Q_D(QQuickWeekNumberColumn);
-    QQuickControl::geometryChanged(newGeometry, oldGeometry);
+    QQuickControl::geometryChange(newGeometry, oldGeometry);
     if (isComponentComplete())
         d->resizeItems();
 }
