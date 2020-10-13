@@ -65,6 +65,7 @@ class EventModel : public QAbstractListModel
     Q_PROPERTY(SqlEventDatabase *eventDatabase READ eventDatabase WRITE setEventDatabase NOTIFY eventDatabaseChanged)
     Q_PROPERTY(QDate date READ date WRITE setDate NOTIFY dateChanged)
     QML_ELEMENT
+    Q_MOC_INCLUDE("sqleventdatabase.h")
 
 public:
     EventModel(QObject *parent = nullptr);
