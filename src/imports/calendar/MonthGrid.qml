@@ -5,14 +5,17 @@
 **
 ** This file is part of Qt Quick Calendar.
 **
-** $QT_BEGIN_LICENSE:GPL$
-** Commercial License Usage
-** Licensees holding valid commercial Qt licenses may use this file in
-** accordance with the commercial license agreement provided with the
-** Software or, alternatively, in accordance with the terms contained in
-** a written agreement between you and The Qt Company. For licensing terms
-** and conditions see https://www.qt.io/terms-conditions. For further
-** information use the contact form at https://www.qt.io/contact-us.
+** $QT_BEGIN_LICENSE:GPL-MARKETPLACE-QT$
+**
+** Marketplace License Usage
+** Users, who have licensed the Software under the Qt Marketplace license
+** agreement, may use this file in accordance with the Qt Marketplace license
+** agreement provided with the Software or, alternatively, in accordance with
+** the terms contained in a written agreement between the licensee and The Qt
+** Company. For licensing terms and conditions see
+** https://www.qt.io/terms-conditions/#marketplace and
+** https://www.qt.io/terms-conditions. For further information use the contact
+** form at https://www.qt.io/contact-us.
 **
 ** GNU General Public License Usage
 ** Alternatively, this file may be used under the terms of the GNU
