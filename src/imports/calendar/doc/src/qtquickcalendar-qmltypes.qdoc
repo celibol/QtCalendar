@@ -26,7 +26,7 @@
 ****************************************************************************/
 
 /*!
-    \qmlmodule Qt.marketplace.calendar 1.0
+    \qmlmodule QtQuick.Calendar 1.0
     \title Qt Quick Calendar QML Types
     \ingroup qmlmodules
     \brief Provides QML types for calendars (Qt Quick Calendar).

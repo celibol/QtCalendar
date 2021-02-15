@@ -37,7 +37,7 @@
 
     \section1 QML Types
 
-    \generatelist {qmltypesbymodule Qt.marketplace.calendar}
+    \generatelist {qmltypesbymodule QtQuick.Calendar}
 
     \compatibility
 
