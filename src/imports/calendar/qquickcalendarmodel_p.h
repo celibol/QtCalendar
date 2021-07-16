@@ -60,6 +60,8 @@ class QQuickCalendarModel : public QAbstractListModel, public QQmlParserStatus
     Q_PROPERTY(QDate from READ from WRITE setFrom NOTIFY fromChanged FINAL)
     Q_PROPERTY(QDate to READ to WRITE setTo NOTIFY toChanged FINAL)
     Q_PROPERTY(int count READ rowCount NOTIFY countChanged)
+    QML_NAMED_ELEMENT(CalendarModel)
+    QML_ADDED_IN_VERSION(1, 0)
 
 public:
     explicit QQuickCalendarModel(QObject *parent = nullptr);

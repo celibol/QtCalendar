@@ -59,6 +59,8 @@ class QQuickMonthGrid : public QQuickControl
     Q_PROPERTY(QVariant source READ source WRITE setSource NOTIFY sourceChanged FINAL)
     Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged FINAL)
     Q_PROPERTY(QQmlComponent *delegate READ delegate WRITE setDelegate NOTIFY delegateChanged FINAL)
+    QML_NAMED_ELEMENT(AbstractMonthGrid)
+    QML_ADDED_IN_VERSION(1, 0)
 
 public:
     explicit QQuickMonthGrid(QQuickItem *parent = nullptr);

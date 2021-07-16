@@ -10,7 +10,7 @@ file(GLOB_RECURSE test_data_glob
     ${CMAKE_CURRENT_SOURCE_DIR}/data/tst_*)
 list(APPEND test_data ${test_data_glob})
 
-qt_add_test(tst_calendar
+qt_internal_add_test(tst_calendar
     GUI
     QMLTEST
     SOURCES
@@ -19,7 +19,3 @@ qt_add_test(tst_calendar
         Qt::Gui
     TESTDATA ${test_data}
 )
-
-#### Keys ignored in scope 1:.:.:calendar.pro:<TRUE>:
-# OTHER_FILES = "$$PWD/data/*.qml"
-# TEMPLATE = "app"

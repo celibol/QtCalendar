@@ -53,6 +53,9 @@ QT_BEGIN_NAMESPACE
 class QQuickCalendar : public QObject
 {
     Q_OBJECT
+    QML_SINGLETON
+    QML_NAMED_ELEMENT(Calendar)
+    QML_ADDED_IN_VERSION(1, 0)
 
 public:
     explicit QQuickCalendar(QObject *parent = nullptr);

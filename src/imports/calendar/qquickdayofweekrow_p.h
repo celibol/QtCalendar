@@ -56,6 +56,8 @@ class QQuickDayOfWeekRow : public QQuickControl
     Q_OBJECT
     Q_PROPERTY(QVariant source READ source WRITE setSource NOTIFY sourceChanged FINAL)
     Q_PROPERTY(QQmlComponent *delegate READ delegate WRITE setDelegate NOTIFY delegateChanged FINAL)
+    QML_NAMED_ELEMENT(AbstractDayOfWeekRow)
+    QML_ADDED_IN_VERSION(1, 0)
 
 public:
     explicit QQuickDayOfWeekRow(QQuickItem *parent = nullptr);

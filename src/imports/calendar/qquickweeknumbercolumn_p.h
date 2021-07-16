@@ -58,6 +58,8 @@ class QQuickWeekNumberColumn : public QQuickControl
     Q_PROPERTY(int year READ year WRITE setYear NOTIFY yearChanged FINAL)
     Q_PROPERTY(QVariant source READ source WRITE setSource NOTIFY sourceChanged FINAL)
     Q_PROPERTY(QQmlComponent *delegate READ delegate WRITE setDelegate NOTIFY delegateChanged FINAL)
+    QML_NAMED_ELEMENT(AbstractWeekNumberColumn)
+    QML_ADDED_IN_VERSION(1, 0)
 
 public:
     explicit QQuickWeekNumberColumn(QQuickItem *parent = nullptr);
