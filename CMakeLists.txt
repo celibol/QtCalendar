@@ -15,6 +15,8 @@ find_package(Qt6 ${PROJECT_VERSION} CONFIG REQUIRED COMPONENTS BuildInternals Co
 find_package(Qt6 ${PROJECT_VERSION} CONFIG OPTIONAL_COMPONENTS
     # Needed when building examples in-tree
     Sql
+    # Needed for tests
+    QuickTest
 )
 
 if(NOT TARGET Qt::QuickControls2)
