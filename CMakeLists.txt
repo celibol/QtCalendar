@@ -12,6 +12,11 @@ project(quickcalendar
 
 find_package(Qt6 ${PROJECT_VERSION} CONFIG REQUIRED COMPONENTS BuildInternals Core QuickControls2 QuickTemplates2)
 
+find_package(Qt6 ${PROJECT_VERSION} CONFIG OPTIONAL_COMPONENTS
+    # Needed when building examples in-tree
+    Sql
+)
+
 if(NOT TARGET Qt::QuickControls2)
     message(NOTICE "Skipping the build as the condition \"TARGET Qt::QuickControls2\" is not met.")
     return()
