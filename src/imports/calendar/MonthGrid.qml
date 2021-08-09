@@ -50,6 +50,8 @@ AbstractMonthGrid {
         opacity: model.month === control.month ? 1 : 0
         text: model.day
         font: control.font
+
+        required property var model
     }
     //! [delegate]
 

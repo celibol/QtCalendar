@@ -48,10 +48,12 @@ AbstractDayOfWeekRow {
 
     //! [delegate]
     delegate: Text {
-        text: model.shortName
+        text: shortName
         font: control.font
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
+
+        required property string shortName
     }
     //! [delegate]
 
