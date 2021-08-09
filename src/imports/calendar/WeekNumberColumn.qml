@@ -48,10 +48,12 @@ AbstractWeekNumberColumn {
 
     //! [delegate]
     delegate: Text {
-        text: model.weekNumber
+        text: weekNumber
         font: control.font
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
+
+        required property int weekNumber
     }
     //! [delegate]
 
