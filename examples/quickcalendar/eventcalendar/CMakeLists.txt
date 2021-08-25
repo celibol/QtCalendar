@@ -1,6 +1,6 @@
 # Generated from eventcalendar.pro.
 
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.16)
 project(eventcalendar LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -37,19 +37,15 @@ target_link_libraries(eventcalendar PUBLIC
     Qt::Sql
 )
 
-
-# Resources:
-set(qmake_immediate_resource_files
-    "MonthGridDelegate.qml"
-    "eventcalendar.qml"
-    "qtquickcontrols2.conf"
-)
-
-qt6_add_resources(eventcalendar "qmake_immediate"
-    PREFIX
-        "/"
-    FILES
-        ${qmake_immediate_resource_files}
+qt_add_qml_module(eventcalendar
+    URI App
+    VERSION 1.0
+    QML_FILES
+        MonthGridDelegate.qml
+        eventcalendar.qml
+    RESOURCES
+        qtquickcontrols2.conf
+    NO_RESOURCE_TARGET_PATH
 )
 
 install(TARGETS eventcalendar
@@ -58,9 +54,3 @@ install(TARGETS eventcalendar
     LIBRARY DESTINATION "${INSTALL_EXAMPLEDIR}"
 )
 
-set_target_properties(eventcalendar PROPERTIES
-    QT_QML_MODULE_VERSION 1.0
-    QT_QML_MODULE_URI App
-)
-
-qt6_qml_type_registration(eventcalendar)
