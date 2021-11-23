@@ -108,9 +108,15 @@ public:
     void updatePress(const QPointF &pos);
     void clearPress(bool clicked);
 
+#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
     void handlePress(const QPointF &point, ulong timestamp) override;
     void handleMove(const QPointF &point, ulong timestamp) override;
     void handleRelease(const QPointF &point, ulong timestamp) override;
+#else
+    void handlePress(const QPointF &point) override;
+    void handleMove(const QPointF &point) override;
+    void handleRelease(const QPointF &point) override;
+#endif
     void handleUngrab() override;
 
     static void setContextProperty(QQuickItem *item, const QString &name, const QVariant &value);
@@ -181,24 +187,43 @@ void QQuickMonthGridPrivate::clearPress(bool clicked)
     pressedItem = nullptr;
 }
 
+#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
 void QQuickMonthGridPrivate::handlePress(const QPointF &point, ulong timestamp)
 {
     Q_Q(QQuickMonthGrid);
     QQuickControlPrivate::handlePress(point, timestamp);
+#else
+void QQuickMonthGridPrivate::handlePress(const QPointF &point)
+{
+    Q_Q(QQuickMonthGrid);
+    QQuickControlPrivate::handlePress(point);
+#endif
     updatePress(point);
     if (pressedDate.isValid())
         pressTimer = q->startTimer(qGuiApp->styleHints()->mousePressAndHoldInterval());
 }
 
+#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
 void QQuickMonthGridPrivate::handleMove(const QPointF &point, ulong timestamp)
 {
     QQuickControlPrivate::handleMove(point, timestamp);
+#else
+void QQuickMonthGridPrivate::handleMove(const QPointF &point)
+{
+    QQuickControlPrivate::handleMove(point);
+#endif
     updatePress(point);
 }
 
+#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
 void QQuickMonthGridPrivate::handleRelease(const QPointF &point, ulong timestamp)
 {
     QQuickControlPrivate::handleRelease(point, timestamp);
+#else
+void QQuickMonthGridPrivate::handleRelease(const QPointF &point)
+{
+    QQuickControlPrivate::handleRelease(point);
+#endif
     clearPress(true);
 }
 

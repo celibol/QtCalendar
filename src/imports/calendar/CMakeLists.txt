@@ -8,13 +8,13 @@ set(qml_files
     "WeekNumberColumn.qml"
 )
 set_source_files_properties(DayOfWeekRow.qml PROPERTIES
-    QT_QML_SOURCE_VERSION "1.0"
+    QT_QML_SOURCE_VERSIONS "1.0"
 )
 set_source_files_properties(MonthGrid.qml PROPERTIES
-    QT_QML_SOURCE_VERSION "1.0"
+    QT_QML_SOURCE_VERSIONS "1.0"
 )
 set_source_files_properties(WeekNumberColumn.qml PROPERTIES
-    QT_QML_SOURCE_VERSION "1.0"
+    QT_QML_SOURCE_VERSIONS "1.0"
 )
 
 qt_internal_add_qml_module(QuickCalendar
