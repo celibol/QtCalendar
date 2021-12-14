@@ -1,3 +1,3 @@
 # Generated from quickcalendar.pro.
 
-add_subdirectory(eventcalendar)
+qt_internal_add_example(eventcalendar)
