@@ -108,7 +108,7 @@ public:
     void updatePress(const QPointF &pos);
     void clearPress(bool clicked);
 
-#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 3, 0)
     void handlePress(const QPointF &point, ulong timestamp) override;
     void handleMove(const QPointF &point, ulong timestamp) override;
     void handleRelease(const QPointF &point, ulong timestamp) override;
@@ -187,7 +187,7 @@ void QQuickMonthGridPrivate::clearPress(bool clicked)
     pressedItem = nullptr;
 }
 
-#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 3, 0)
 void QQuickMonthGridPrivate::handlePress(const QPointF &point, ulong timestamp)
 {
     Q_Q(QQuickMonthGrid);
@@ -203,7 +203,7 @@ void QQuickMonthGridPrivate::handlePress(const QPointF &point)
         pressTimer = q->startTimer(qGuiApp->styleHints()->mousePressAndHoldInterval());
 }
 
-#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 3, 0)
 void QQuickMonthGridPrivate::handleMove(const QPointF &point, ulong timestamp)
 {
     QQuickControlPrivate::handleMove(point, timestamp);
@@ -215,7 +215,7 @@ void QQuickMonthGridPrivate::handleMove(const QPointF &point)
     updatePress(point);
 }
 
-#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 3, 0)
 void QQuickMonthGridPrivate::handleRelease(const QPointF &point, ulong timestamp)
 {
     QQuickControlPrivate::handleRelease(point, timestamp);
